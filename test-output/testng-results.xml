@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LoginSuite" duration-ms="18138" started-at="2020-06-12T18:24:50 PDT" finished-at="2020-06-12T18:25:08 PDT">
+    <groups>
+    </groups>
+    <test name="LoginValidData" duration-ms="18138" started-at="2020-06-12T18:24:50 PDT" finished-at="2020-06-12T18:25:08 PDT">
+      <class name="com.salesforce.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@6ee52dcd]" name="setUp" is-config="true" duration-ms="8139" started-at="2020-06-12T18:24:50 PDT" finished-at="2020-06-12T18:24:58 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.salesforce.qa.testcases.LoginPageTest@6ee52dcd]" name="loginPageTitleTest" duration-ms="28" started-at="2020-06-12T18:24:58 PDT" finished-at="2020-06-12T18:24:58 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@6ee52dcd]" name="tearDown" is-config="true" duration-ms="165" started-at="2020-06-12T18:24:58 PDT" finished-at="2020-06-12T18:24:58 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@6ee52dcd]" name="setUp" is-config="true" duration-ms="4510" started-at="2020-06-12T18:24:58 PDT" finished-at="2020-06-12T18:25:03 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.salesforce.qa.testcases.LoginPageTest@6ee52dcd]" name="loginTest" duration-ms="2893" started-at="2020-06-12T18:25:03 PDT" finished-at="2020-06-12T18:25:06 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@6ee52dcd]" name="tearDown" is-config="true" duration-ms="2323" started-at="2020-06-12T18:25:06 PDT" finished-at="2020-06-12T18:25:08 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.salesforce.qa.testcases.LoginPageTest -->
+    </test> <!-- LoginValidData -->
+  </suite> <!-- LoginSuite -->
+</testng-results>
