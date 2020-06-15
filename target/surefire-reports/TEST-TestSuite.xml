@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="47.843" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="42.082" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib"/>
@@ -68,9 +68,45 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="loginPageTitleTest" classname="com.salesforce.qa.testcases.LoginPageTest" time="0.037"/>
-  <testcase name="loginTest" classname="com.salesforce.qa.testcases.LoginPageTest" time="3.575"/>
-  <testcase name="logintest_invalidCredentials" classname="com.salesforce.qa.testcases.LoginPageTest" time="0.852"/>
-  <testcase name="logintest_invalidCredentials" classname="com.salesforce.qa.testcases.LoginPageTest" time="0.927"/>
-  <testcase name="logintest_rememberMe" classname="com.salesforce.qa.testcases.LoginPageTest" time="13.711"/>
+  <testcase name="loginPageTitleTest" classname="com.salesforce.qa.testcases.LoginPageTest" time="0.022"/>
+  <testcase name="loginTest" classname="com.salesforce.qa.testcases.LoginPageTest" time="4.051"/>
+  <testcase name="logintest_invalidCredentials" classname="com.salesforce.qa.testcases.LoginPageTest" time="1.029"/>
+  <testcase name="logintest_invalidCredentials" classname="com.salesforce.qa.testcases.LoginPageTest" time="0.728"/>
+  <testcase name="logintest_rememberMe" classname="com.salesforce.qa.testcases.LoginPageTest" time="4.177">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.salesforce.qa.testcases.LoginPageTest.logintest_rememberMe(LoginPageTest.java:72)
+</failure>
+    <system-out><![CDATA[Before navigating to: 'https://login.salesforce.com/'
+Navigated to:'https://login.salesforce.com/'
+Trying to find Element By : By.id: username
+Found Element By : By.id: username
+Trying to find Element By : By.id: password
+Found Element By : By.id: password
+Trying to find Element By : By.id: rememberUn
+Found Element By : By.id: rememberUn
+Trying to click on: [[ChromeDriver: chrome on MAC (7ae226e2dff51f5d60b1303981c3f3c5)] -> id: rememberUn]
+Clicked on: [[ChromeDriver: chrome on MAC (7ae226e2dff51f5d60b1303981c3f3c5)] -> id: rememberUn]
+Trying to find Element By : By.id: Login
+Found Element By : By.id: Login
+Trying to click on: [[ChromeDriver: chrome on MAC (7ae226e2dff51f5d60b1303981c3f3c5)] -> id: Login]
+Clicked on: [[ChromeDriver: chrome on MAC (7ae226e2dff51f5d60b1303981c3f3c5)] -> id: Login]
+Trying to find Element By : By.id: userNav-arrow
+Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userNav\-arrow"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Rohans-MBP-2.attlocal.net', ip: '2600:1700:d610:39c0:0:0:0:44', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/wy/j2m_y_mx4kx...}, goog:chromeOptions: {debuggerAddress: localhost:54080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7ae226e2dff51f5d60b1303981c3f3c5
+*** Element info: {Using=id, value=userNav-arrow}
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 27077
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 15, 2020 10:11:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

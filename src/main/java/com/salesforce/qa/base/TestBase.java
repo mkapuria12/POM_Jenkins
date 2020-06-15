@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -24,7 +25,6 @@ public class TestBase {
 		public static CommonUtilities cUtil=new CommonUtilities();
 		public static ExtentReportManager eReport=new ExtentReportManager();
 		
-		
 		public TestBase(){
 
 			try {
@@ -39,6 +39,8 @@ public class TestBase {
 				e.printStackTrace();
 			}
 		}
+		
+		
 		
 		
 		public static void initialization(){

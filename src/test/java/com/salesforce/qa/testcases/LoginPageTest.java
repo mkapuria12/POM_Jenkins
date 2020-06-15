@@ -16,17 +16,17 @@ public class LoginPageTest extends TestBase{
 	LoginPage loginPage;
 	String sheetName="Valid Login Credentials";
 	String sheetName1="Invalid Login Credentials";
-	Logger log = Logger.getLogger(LoginPageTest.class);
 	
-	//logger=reports.startTest("LoginPageTest");
+	public static Logger log = Logger.getLogger(LoginPageTest.class.getName());
 
+	
 	public LoginPageTest(){
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setUp(){
-		log.info("launching chrome broswer");
+		log.info("Launching browser");
 		initialization();
 		loginPage = new LoginPage();	
 	}

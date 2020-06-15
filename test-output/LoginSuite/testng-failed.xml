@@ -9,8 +9,11 @@
       <class name="com.salesforce.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="logintest_rememberMe"/>
           <include name="tearDown"/>
-          <include name="logintest_invalidCredentials" invocation-numbers="0"/>
+          <include name="logintest_invalidCredentials"/>
+          <include name="loginPageTitleTest"/>
         </methods>
       </class> <!-- com.salesforce.qa.testcases.LoginPageTest -->
     </classes>

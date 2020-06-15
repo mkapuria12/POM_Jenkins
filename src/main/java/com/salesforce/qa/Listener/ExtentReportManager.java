@@ -18,8 +18,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtentReportManager implements IReporter{
 	public ExtentReports extent;
-	static ExtentReports reports;
-	static ExtentTest logger;
+	public static ExtentReports reports;
+	public static ExtentTest logger;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {

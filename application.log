@@ -1,0 +1,66 @@
+2020-06-15 10:09:20,440  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:09:27,642  INFO [main] LoginPageTest:38 - Login | Salesforce
+2020-06-15 10:09:27,813  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:09:28,429  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:09:33,729  INFO [main] LoginPageTest:51 - logged in successfully!
+2020-06-15 10:09:33,912  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:09:34,006  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:09:41,343 ERROR [main] LoginPageTest:64 - Please enter your password.
+2020-06-15 10:09:41,515  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:09:41,516  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:09:47,528 ERROR [main] LoginPageTest:64 - Please check your username and password. If you still can't log in, contact your Salesforce administrator.
+2020-06-15 10:09:47,811  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:09:47,871  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:09:54,933  INFO [main] LoginPageTest:70 - Logged in
+2020-06-15 10:09:54,933  INFO [main] LoginPageTest:71 - on home page
+2020-06-15 10:10:00,961  INFO [main] LoginPageTest:73 - logged out
+2020-06-15 10:10:04,000  INFO [main] LoginPageTest:76 - mitali.k@salesforce.com
+2020-06-15 10:10:04,205  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:10:04,410 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-06-15 10:10:04,411 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-06-15 10:10:04,413 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-06-15 10:10:04,414 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-06-15 10:10:04,414 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-06-15 10:10:04,415 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-06-15 10:10:04,474 DEBUG [main] cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-06-15 10:10:04,475 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-06-15 10:10:04,477 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-06-15 10:10:04,478 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-06-15 10:10:04,484 DEBUG [main] cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/Mit/.m2/repository/com/relevantcodes/extentreports/2.40.2/extentreports-2.40.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-06-15 10:10:04,810 DEBUG [main] cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-06-15 10:10:04,811 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-06-15 10:10:04,811 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-06-15 10:10:04,812 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-06-15 10:10:04,812 DEBUG [main] cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/Mit/.m2/repository/com/relevantcodes/extentreports/2.40.2/extentreports-2.40.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-06-15 10:11:08,292  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:11:15,276  INFO [main] LoginPageTest:38 - Login | Salesforce
+2020-06-15 10:11:15,432  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:11:15,962  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:11:26,144  INFO [main] LoginPageTest:51 - logged in successfully!
+2020-06-15 10:11:26,309  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:11:26,358  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:11:33,537 ERROR [main] LoginPageTest:64 - Please enter your password.
+2020-06-15 10:11:33,700  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:11:33,701  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:11:39,016 ERROR [main] LoginPageTest:64 - Please check your username and password. If you still can't log in, contact your Salesforce administrator.
+2020-06-15 10:11:39,218  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:11:39,277  INFO [main] LoginPageTest:29 - Launching browser
+2020-06-15 10:11:49,199  INFO [main] LoginPageTest:70 - Logged in
+2020-06-15 10:11:49,200  INFO [main] LoginPageTest:71 - on home page
+2020-06-15 10:11:49,450  INFO [main] LoginPageTest:82 - Quit the browser.
+2020-06-15 10:11:49,671 DEBUG [main] cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-06-15 10:11:49,672 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-06-15 10:11:49,673 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-06-15 10:11:49,674 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-06-15 10:11:49,674 DEBUG [main] cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/Mit/.m2/repository/com/relevantcodes/extentreports/2.40.2/extentreports-2.40.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-06-15 10:11:49,910 DEBUG [main] cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-06-15 10:11:49,911 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-06-15 10:11:49,912 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-06-15 10:11:49,912 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-06-15 10:11:49,912 DEBUG [main] cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/Mit/.m2/repository/com/relevantcodes/extentreports/2.40.2/extentreports-2.40.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-06-15 10:11:50,024 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-06-15 10:11:50,025 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-06-15 10:11:50,027 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-06-15 10:11:50,027 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-06-15 10:11:50,028 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-06-15 10:11:50,028 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down

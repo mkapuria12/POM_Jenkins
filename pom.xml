@@ -3,6 +3,11 @@
   <groupId>Demo_POM_Testcases</groupId>
   <artifactId>Demo_POM_Framework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <name>Demo_POM_Testcases</name>
+	<url>http://maven.apache.org</url>
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
    <build>
      <sourceDirectory>src</sourceDirectory>
     <resources>

@@ -9,14 +9,47 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">LoginSuite</th></tr>
-<tr><td><a href="#t0">LoginFunctionality</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">46,878</td><td></td><td></td></tr>
+<tr><td><a href="#t0">LoginFunctionality</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,190</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LoginSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginFunctionality &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.salesforce.qa.testcases.LoginPageTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1592204517059</td><td rowspan="1">35</td></tr><tr class="passedeven"><td><a href="#m1">loginTest</a></td><td rowspan="1">1592204522166</td><td rowspan="1">3574</td></tr><tr class="passedeven"><td><a href="#m2">logintest_invalidCredentials</a></td><td rowspan="2">1592204531346</td><td rowspan="2">851</td></tr><tr class="passedeven"><td><a href="#m3">logintest_invalidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m4">logintest_rememberMe</a></td><td rowspan="1">1592204542956</td><td rowspan="1">13711</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LoginSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginFunctionality &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.salesforce.qa.testcases.LoginPageTest</td><td><a href="#m0">logintest_rememberMe</a></td><td rowspan="1">1592241105083</td><td rowspan="1">4175</td></tr><tr><th colspan="4">LoginFunctionality &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.salesforce.qa.testcases.LoginPageTest</td><td><a href="#m1">loginPageTitleTest</a></td><td rowspan="1">1592241075259</td><td rowspan="1">20</td></tr><tr class="passedeven"><td><a href="#m2">loginTest</a></td><td rowspan="1">1592241082094</td><td rowspan="1">4050</td></tr><tr class="passedeven"><td><a href="#m3">logintest_invalidCredentials</a></td><td rowspan="2">1592241092509</td><td rowspan="2">1028</td></tr><tr class="passedeven"><td><a href="#m4">logintest_invalidCredentials</a></td></tr></tbody>
 </table>
-<h2>LoginFunctionality</h2><h3 id="m0">com.salesforce.qa.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.salesforce.qa.testcases.LoginPageTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mitali.k@salesforce.com</td><td>test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.salesforce.qa.testcases.LoginPageTest#logintest_invalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mitali.k@salesforce.com</td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.salesforce.qa.testcases.LoginPageTest#logintest_invalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>123.0</td><td>22131.0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.salesforce.qa.testcases.LoginPageTest#logintest_rememberMe</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mitali.k@salesforce.com</td><td>test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LoginFunctionality</h2><h3 id="m0">com.salesforce.qa.testcases.LoginPageTest#logintest_rememberMe</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mitali.k@salesforce.com</td><td>test@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:55)
+	at com.salesforce.qa.Listener.WebEventListener.onException(WebEventListener.java:59)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy29.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy30.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.salesforce.qa.pages.LoginPage.logout(LoginPage.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.logintest_rememberMe(LoginPageTest.java:72)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.salesforce.qa.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.salesforce.qa.testcases.LoginPageTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mitali.k@salesforce.com</td><td>test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.salesforce.qa.testcases.LoginPageTest#logintest_invalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mitali.k@salesforce.com</td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.salesforce.qa.testcases.LoginPageTest#logintest_invalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>123.0</td><td>22131.0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

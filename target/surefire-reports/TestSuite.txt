@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.843 sec - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 42.082 sec <<< FAILURE! - in TestSuite
+logintest_rememberMe(com.salesforce.qa.testcases.LoginPageTest)  Time elapsed: 4.177 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.salesforce.qa.testcases.LoginPageTest.logintest_rememberMe(LoginPageTest.java:72)
+

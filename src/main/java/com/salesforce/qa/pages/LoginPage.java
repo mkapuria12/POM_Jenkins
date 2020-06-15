@@ -63,5 +63,4 @@ public class LoginPage extends TestBase{
 		System.out.println("clicked on logout button");
 	}
 	
-	
 }
