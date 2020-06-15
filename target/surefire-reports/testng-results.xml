@@ -1,37 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="LoginSuite" duration-ms="12447" started-at="2020-06-12T18:25:24 PDT" finished-at="2020-06-12T18:25:36 PDT">
+  <suite name="LoginSuite" duration-ms="46878" started-at="2020-06-15T00:01:49 PDT" finished-at="2020-06-15T00:02:36 PDT">
     <groups>
     </groups>
-    <test name="LoginValidData" duration-ms="12447" started-at="2020-06-12T18:25:24 PDT" finished-at="2020-06-12T18:25:36 PDT">
+    <test name="LoginFunctionality" duration-ms="46878" started-at="2020-06-15T00:01:49 PDT" finished-at="2020-06-15T00:02:36 PDT">
       <class name="com.salesforce.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@f4a3a8d]" name="setUp" is-config="true" duration-ms="7343" started-at="2020-06-12T18:25:24 PDT" finished-at="2020-06-12T18:25:31 PDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="setUp" is-config="true" duration-ms="7050" started-at="2020-06-15T00:01:50 PDT" finished-at="2020-06-15T00:01:57 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.salesforce.qa.testcases.LoginPageTest@f4a3a8d]" name="loginPageTitleTest" duration-ms="11" started-at="2020-06-12T18:25:31 PDT" finished-at="2020-06-12T18:25:31 PDT">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="loginPageTitleTest" duration-ms="35" started-at="2020-06-15T00:01:57 PDT" finished-at="2020-06-15T00:01:57 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@f4a3a8d]" name="tearDown" is-config="true" duration-ms="130" started-at="2020-06-12T18:25:31 PDT" finished-at="2020-06-12T18:25:31 PDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="tearDown" is-config="true" duration-ms="179" started-at="2020-06-15T00:01:57 PDT" finished-at="2020-06-15T00:01:57 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@f4a3a8d]" name="setUp" is-config="true" duration-ms="4193" started-at="2020-06-12T18:25:31 PDT" finished-at="2020-06-12T18:25:36 PDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="setUp" is-config="true" duration-ms="4272" started-at="2020-06-15T00:01:57 PDT" finished-at="2020-06-15T00:02:02 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.salesforce.qa.testcases.LoginPageTest@f4a3a8d]" name="loginTest" duration-ms="558" started-at="2020-06-12T18:25:36 PDT" finished-at="2020-06-12T18:25:36 PDT">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:2, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="loginTest" duration-ms="3574" started-at="2020-06-15T00:02:02 PDT" data-provider="getValidLoginTestData" finished-at="2020-06-15T00:02:05 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mitali.k@salesforce.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@f4a3a8d]" name="tearDown" is-config="true" duration-ms="166" started-at="2020-06-12T18:25:36 PDT" finished-at="2020-06-12T18:25:36 PDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="tearDown" is-config="true" duration-ms="166" started-at="2020-06-15T00:02:05 PDT" finished-at="2020-06-15T00:02:05 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="setUp" is-config="true" duration-ms="5385" started-at="2020-06-15T00:02:05 PDT" finished-at="2020-06-15T00:02:11 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logintest_invalidCredentials(java.lang.String, java.lang.String)[pri:3, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="logintest_invalidCredentials" duration-ms="851" started-at="2020-06-15T00:02:11 PDT" data-provider="getInvalidLoginTestData" finished-at="2020-06-15T00:02:12 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mitali.k@salesforce.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest_invalidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="tearDown" is-config="true" duration-ms="140" started-at="2020-06-15T00:02:12 PDT" finished-at="2020-06-15T00:02:12 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="setUp" is-config="true" duration-ms="3937" started-at="2020-06-15T00:02:12 PDT" finished-at="2020-06-15T00:02:16 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logintest_invalidCredentials(java.lang.String, java.lang.String)[pri:3, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="logintest_invalidCredentials" duration-ms="927" started-at="2020-06-15T00:02:16 PDT" data-provider="getInvalidLoginTestData" finished-at="2020-06-15T00:02:17 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[22131.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest_invalidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="tearDown" is-config="true" duration-ms="159" started-at="2020-06-15T00:02:17 PDT" finished-at="2020-06-15T00:02:17 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="setUp" is-config="true" duration-ms="5557" started-at="2020-06-15T00:02:17 PDT" finished-at="2020-06-15T00:02:22 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logintest_rememberMe(java.lang.String, java.lang.String)[pri:4, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="logintest_rememberMe" duration-ms="13711" started-at="2020-06-15T00:02:22 PDT" data-provider="getValidLoginTestData" finished-at="2020-06-15T00:02:36 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mitali.k@salesforce.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest_rememberMe -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@91f565d]" name="tearDown" is-config="true" duration-ms="187" started-at="2020-06-15T00:02:36 PDT" finished-at="2020-06-15T00:02:36 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.salesforce.qa.testcases.LoginPageTest -->
-    </test> <!-- LoginValidData -->
+    </test> <!-- LoginFunctionality -->
   </suite> <!-- LoginSuite -->
 </testng-results>

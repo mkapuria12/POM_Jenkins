@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-LoginSuite">
-              <span class="suite-name border-passed">LoginSuite</span>
+              <span class="suite-name border-failed">LoginSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-LoginSuite" class="hide-methods failed suite-LoginSuite"> (hide)</a> <!-- hide-methods failed suite-LoginSuite -->
+                      <a href="#" panel-name="suite-LoginSuite" class="show-methods failed suite-LoginSuite"> (show)</a> <!-- show-methods failed suite-LoginSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-LoginSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginSuite" title="com.salesforce.qa.testcases.LoginPageTest" hash-for-method="logintest_invalidCredentials(mitali.k@salesforce.com, )">logintest_invalidCredentials(mitali.k@salesforce.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-LoginSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,7 +123,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-LoginSuite" title="com.salesforce.qa.testcases.LoginPageTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginSuite" title="com.salesforce.qa.testcases.LoginPageTest" hash-for-method="loginTest(mitali.k@salesforce.com, test@123)">loginTest(mitali.k@salesforce.com, test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginSuite" title="com.salesforce.qa.testcases.LoginPageTest" hash-for-method="logintest_invalidCredentials(123.0, 22131.0)">logintest_invalidCredentials(123.0, 22131.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LoginSuite" title="com.salesforce.qa.testcases.LoginPageTest" hash-for-method="logintest_rememberMe(mitali.k@salesforce.com, test@123)">logintest_rememberMe(mitali.k@salesforce.com, test@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-LoginSuite -->
@@ -124,6 +148,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-LoginSuite" class="panel LoginSuite">
+          <div class="suite-LoginSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.qa.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest_invalidCredentials(mitali.k@salesforce.com, )">
+                  </a> <!-- logintest_invalidCredentials(mitali.k@salesforce.com, ) -->
+                  <span class="method-name">logintest_invalidCredentials</span>
+                  <span class="parameters">(mitali.k@salesforce.com, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:55)
+	at com.salesforce.qa.Listener.WebEventListener.onException(WebEventListener.java:59)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at com.salesforce.qa.pages.LoginPage.login_invalidCredential(LoginPage.java:45)
+	at com.salesforce.qa.testcases.LoginPageTest.logintest_invalidCredentials(LoginPageTest.java:62)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginSuite-class-failed -->
           <div class="suite-LoginSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -139,9 +195,26 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
+                  <a name="loginTest(mitali.k@salesforce.com, test@123)">
+                  </a> <!-- loginTest(mitali.k@salesforce.com, test@123) -->
                   <span class="method-name">loginTest</span>
+                  <span class="parameters">(mitali.k@salesforce.com, test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest_invalidCredentials(123.0, 22131.0)">
+                  </a> <!-- logintest_invalidCredentials(123.0, 22131.0) -->
+                  <span class="method-name">logintest_invalidCredentials</span>
+                  <span class="parameters">(123.0, 22131.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest_rememberMe(mitali.k@salesforce.com, test@123)">
+                  </a> <!-- logintest_rememberMe(mitali.k@salesforce.com, test@123) -->
+                  <span class="method-name">logintest_rememberMe</span>
+                  <span class="parameters">(mitali.k@salesforce.com, test@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -156,11 +229,14 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;LoginSuite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LoginValidData&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.salesforce.qa.Listener.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginFunctionality&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.salesforce.qa.testcases.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginValidData --&gt;
+  &lt;/test&gt; &lt;!-- LoginFunctionality --&gt;
 &lt;/suite&gt; &lt;!-- LoginSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +248,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginValidData (1 class)</span>
+                <span class="test-name">LoginFunctionality (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,20 +274,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'logintest_rememberMe')
 data.setCell(0, 2, 'com.salesforce.qa.testcases.LoginPageTest')
-data.setCell(0, 3, 2893);
+data.setCell(0, 3, 16540);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginPageTitleTest')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.salesforce.qa.testcases.LoginPageTest')
-data.setCell(1, 3, 28);
+data.setCell(1, 3, 15470);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logintest_invalidCredentials')
+data.setCell(2, 2, 'com.salesforce.qa.testcases.LoginPageTest')
+data.setCell(2, 3, 3412);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logintest_invalidCredentials')
+data.setCell(3, 2, 'com.salesforce.qa.testcases.LoginPageTest')
+data.setCell(3, 3, 1116);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginPageTitleTest')
+data.setCell(4, 2, 'com.salesforce.qa.testcases.LoginPageTest')
+data.setCell(4, 3, 1085);
 window.suiteTableData['LoginSuite']= { tableData: data, tableDiv: 'times-div-LoginSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-LoginSuite">
               </div> <!-- times-div-LoginSuite -->
             </div> <!-- times-div -->
@@ -244,23 +332,61 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">8143 ms</span>
+                <span class="method-start">38320 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8176 ms</span>
+                <span class="method-start">39447 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8346 ms</span>
+                <span class="method-start">43759 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">12856 ms</span>
+                <span class="method-name">loginTest(mitali.k@salesforce.com, test@123)</span>
+                <span class="method-start">65657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15752 ms</span>
+                <span class="method-start">81131 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">81598 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logintest_invalidCredentials(mitali.k@salesforce.com, )</span>
+                <span class="method-start">94295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">97717 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">97953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logintest_invalidCredentials(123.0, 22131.0)</span>
+                <span class="method-start">104494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">105613 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">105847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logintest_rememberMe(mitali.k@salesforce.com, test@123)</span>
+                <span class="method-start">111828 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">128369 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
