@@ -4,18 +4,16 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
-import com.salesforce.qa.Listener.ExtentReportManager;
+import org.testng.annotations.Listeners;
 import com.salesforce.qa.Listener.WebEventListener;
 import com.salesforce.qa.utilities.CommonUtilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+@Listeners(com.salesforce.qa.Listener.TestListener.class)
 public class TestBase {
 
 		public static WebDriver driver;
@@ -23,7 +21,6 @@ public class TestBase {
 		public  static EventFiringWebDriver e_driver;
 		public static WebEventListener eventListener;
 		public static CommonUtilities cUtil=new CommonUtilities();
-		public static ExtentReportManager eReport=new ExtentReportManager();
 		
 		public TestBase(){
 
@@ -39,9 +36,7 @@ public class TestBase {
 				e.printStackTrace();
 			}
 		}
-		
-		
-		
+	
 		
 		public static void initialization(){
 			String browserName = prop.getProperty("browser");

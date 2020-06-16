@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginFunctionality</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/5</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 15 10:09:20 PDT 2020</td>
+<td>Started on:</td><td>Mon Jun 15 16:36:09 PDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43815 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10864 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,114 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace712410791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace712410791'><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.setUp()'><b>setUp</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264178</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+<tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>-1592264180</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,29 +182,229 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.salesforce.qa.testcases.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
-<td></td>
+<td><div><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1129433283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1129433283'><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>com.salesforce.qa.testcases.LoginPageTest@543c6f6d</td></tr>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
 <tr>
-<td title='com.salesforce.qa.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest<br>Parameters: mitali.k@salesforce.com, test@123</td>
-<td></td>
+<td title='com.salesforce.qa.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913746983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913746983'><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>com.salesforce.qa.testcases.LoginPageTest@543c6f6d</td></tr>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
 <tr>
-<td title='com.salesforce.qa.testcases.LoginPageTest.logintest_invalidCredentials()'><b>logintest_invalidCredentials</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest<br>Parameters: mitali.k@salesforce.com, </td>
-<td></td>
-<td>1</td>
-<td>com.salesforce.qa.testcases.LoginPageTest@543c6f6d</td></tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.logintest_invalidCredentials()'><b>logintest_invalidCredentials</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace991671211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace991671211'><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
 <tr>
-<td title='com.salesforce.qa.testcases.LoginPageTest.logintest_invalidCredentials()'><b>logintest_invalidCredentials</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest<br>Parameters: 123.0, 22131.0</td>
-<td></td>
-<td>1</td>
-<td>com.salesforce.qa.testcases.LoginPageTest@543c6f6d</td></tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.logintest_invalidCredentials()'><b>logintest_invalidCredentials</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace608817143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608817143'><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
 <tr>
-<td title='com.salesforce.qa.testcases.LoginPageTest.logintest_rememberMe()'><b>logintest_rememberMe</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest<br>Parameters: mitali.k@salesforce.com, test@123</td>
-<td></td>
-<td>9</td>
-<td>com.salesforce.qa.testcases.LoginPageTest@543c6f6d</td></tr>
+<td title='com.salesforce.qa.testcases.LoginPageTest.logintest_rememberMe()'><b>logintest_rememberMe</b><br>Test class: com.salesforce.qa.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526305386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526305386'><pre>java.lang.NullPointerException
+	at com.salesforce.qa.utilities.CommonUtilities.takeScreenshotAtEndOfTest(CommonUtilities.java:58)
+	at com.salesforce.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.salesforce.qa.testcases.LoginPageTest@7403c468</td></tr>
 </table><p>
 </body>
 </html>

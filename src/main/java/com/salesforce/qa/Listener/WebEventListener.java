@@ -1,7 +1,5 @@
 package com.salesforce.qa.Listener;
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +11,8 @@ import com.salesforce.qa.utilities.CommonUtilities;
 
 public class WebEventListener extends TestBase implements WebDriverEventListener {
 
+	    public static WebDriver driver;
+	    
 		public void beforeNavigateTo(String url, WebDriver driver) {
 			System.out.println("Before navigating to: '" + url + "'");
 		}
@@ -55,9 +55,10 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 		public void onException(Throwable error, WebDriver driver) {
 			System.out.println("Exception occured: " + error);
+			
 			try {
-				CommonUtilities.takeScreenshotAtEndOfTest();
-			} catch (IOException e) {
+				CommonUtilities.takeScreenshotAtEndOfTest(driver);
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}

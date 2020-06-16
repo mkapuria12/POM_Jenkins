@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import org.openqa.selenium.WebDriver;
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -17,10 +18,11 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtentReportManager implements IReporter{
-	public ExtentReports extent;
+	public static ExtentReports extent;
 	public static ExtentReports reports;
-	public static ExtentTest logger;
-
+	public static ExtentTest extLogger;
+	public static WebDriver driver;
+	
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator
@@ -72,4 +74,5 @@ public class ExtentReportManager implements IReporter{
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
+	
 }
